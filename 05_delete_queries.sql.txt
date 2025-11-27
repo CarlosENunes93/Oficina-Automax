@@ -1,0 +1,11 @@
+-- Excluir um item de serviço específico
+DELETE FROM ItemServico
+WHERE ID_ordem_servico = 1 AND ID_servico = 3;
+
+-- Excluir pagamento incorreto
+DELETE FROM Pagamento
+WHERE ID_pagamento = 1;
+
+-- Excluir veículo (apenas se não houver OS associada)
+DELETE FROM Veiculo
+WHERE ID_veiculo = 2;
